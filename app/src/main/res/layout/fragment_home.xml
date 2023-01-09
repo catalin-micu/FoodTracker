@@ -50,6 +50,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginEnd="@dimen/small_margin"
                 android:layout_weight="0.5"
+                android:fontFamily="@font/roboto_light"
                 android:text="Build meal" />
 
             <Button
@@ -59,6 +60,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="@dimen/small_margin"
                 android:layout_weight="0.5"
+                android:fontFamily="@font/roboto_light"
                 android:text="search for recipe" />
 
         </LinearLayout>

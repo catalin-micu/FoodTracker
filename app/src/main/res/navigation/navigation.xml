@@ -8,15 +8,35 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.foodtracker.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_buildMeal"
-            app:destination="@id/buildMeal" />
+            app:destination="@id/buildMeal"
+            app:popUpTo="@id/homeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchForRecipeFragment"
+            app:destination="@id/searchForRecipeFragment"
+            app:popUpTo="@id/homeFragment" />
     </fragment>
     <fragment
         android:id="@+id/buildMeal"
         android:name="com.example.foodtracker.BuildMeal"
-        android:label="fragment_build_meal"
+        android:label="@string/build_meal_title"
         tools:layout="@layout/fragment_build_meal" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.foodtracker.AboutFragment"
+        android:label="@string/about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/rulesFragment"
+        android:name="com.example.foodtracker.RulesFragment"
+        android:label="@string/rules"
+        tools:layout="@layout/fragment_rules" />
+    <fragment
+        android:id="@+id/searchForRecipeFragment"
+        android:name="com.example.foodtracker.SearchForRecipeFragment"
+        android:label="@string/search_for_recipe_title"
+        tools:layout="@layout/fragment_search_for_recipe" />
 </navigation>

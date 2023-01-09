@@ -4,4 +4,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="rules">Rules</string>
     <string name="about">About</string>
+    <string name="build_meal_title">Build Your Meal</string>
+    <string name="app_about_text">Micu Marius Catalin\n\n\n\n\n\n\n\n\n\n\n\nSCPD\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMicu Marius Catalin\n\n\n\n\n\n\n\n\n\n\n\nSCPD\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDAMN</string>
+    <string name="search_for_recipe_title">Search for a recipe</string>
 </resources>
