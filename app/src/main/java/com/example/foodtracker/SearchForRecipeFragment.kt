@@ -5,7 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import com.example.foodtracker.databinding.FragmentSearchForRecipeBinding
 
 
@@ -29,6 +31,16 @@ class SearchForRecipeFragment : Fragment() {
 
         binding.lifecycleOwner = this
         binding.viewModel = viewModel
+        binding.photosGrid.adapter = PhotoGridAdapter(PhotoGridAdapter.OnClickListener {
+            viewModel.displayRecipeDetails(it)
+        })
+//        viewModel.navigateToSelectedRecipe.observe(this, Observer {
+//            if ( null != it ) {
+//                this.findNavController().navigate(
+//                    OverviewFragmentDirections.actionShowDetail(it))
+//                viewModel.displayPropertyDetailsComplete()
+//            }
+//        })
 
 
         setHasOptionsMenu(true)
